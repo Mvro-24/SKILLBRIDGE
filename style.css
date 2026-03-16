@@ -709,8 +709,8 @@ footer{    background-color: var(--bg);}
     align-items: center;
     top: 150px;
     flex-direction: column;
-   left: -440px;
-   top: 0;
+    left: -380px;
+    top: 0;
 
 
 
@@ -738,12 +738,152 @@ footer{    background-color: var(--bg);}
     margin: 10px 5px;
 }
 
+@media (max-width: 1024px) {
+  nav {
+    padding: 16px 20px;
+    justify-content: space-between;
+  }
+
+  .hero-section {
+    padding: 120px 30px 50px;
+    gap: 30px;
+  }
+
+  .top-hero-side-left h1 {
+    font-size: 48px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .top-hero-side-left p {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .right-hero-side {
+    width: 45%;
+    height: 420px;
+  }
+
+  .inside-tags {
+    width: 90%;
+    padding: 22px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-cruds {
+    padding: 50px 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .curd {
+    margin: 10px;
+    width: 300px;
+  }
+
+  .insturctors-cruds {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 40px;
+    gap: 20px;
+  }
+
+  .rev-cur {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .Newsletter-section {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .rightside {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .Contact-Us-Section {
+    padding: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .content h1,
+  .content p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .top-footer {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .left-footer-side p {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .alert-sec {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 420px;
+    padding: 30px 20px;
+  }
+  #m2 .m1{width: 300px;}
+  section{width: fit-content;}
+  .insturctors-cruds {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 50px 40px;
+        gap: 145px;
+    }
+    footer{width: 137%;}
+}
+
+
+
+
+
+
+@media  (max-width:900px){
+    .reviews-curd{width: 24%;}
+    .Newsletter-section{text-align: left;width: 56%;}
+    form{width: 49%;}
+    .Contact-Us-Section{text-align: center;}
+    .nav-ph{left: -1115px;height: 280vh;}
+    .top-hero-side-left h1{width: auto;}
+    .nav-ph .logo h1{font-size:155px}
+    .middle-btms{font-size:60px}
+    .bottom-btms span button{font-size:50px}
+    .hero-section{margin-top: 50px;}
+    .m1{width:250px;}
+    .container-cruds .curd{margin:10px 60px;}
+    .container-cruds {    flex-direction: row;}
+    section,footer{width: 276%;}
+    .reviews-curd{margin-right:20px;}
+    .rev-cur{flex-direction:row;}
+    .insturctors-cruds{        grid-template-columns: repeat(3, 1fr);}
+}
 
 
 
 
 
 @media (max-width: 768px) {
+    .top-footer{align-items: center;}
     body{width: stretch;}
     .nav-links,#alert-btn,#btn-light-dark{
         display: none;
@@ -778,32 +918,37 @@ footer{    background-color: var(--bg);}
 
 
     .top-footer {
+        align-items: center;
         text-align: center;
         display: flex;
         padding: 20px;
         justify-content: center;
-        align-items: stretch;
         margin-right: 40px;
         flex-direction: column;
         width: 100%;
     }
+    .nav-ph .logo h1 {
+        font-size:100px;}
+    .middle-btms{font-size:35px;}
 
+    .bottom-btms span button {font-size: 33px;}
+    .nav-ph {top:-175px;left:-380px;}
     .insturctors-cruds {
         grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
     }
-
 
     .head-of-tracks{
         text-align: center;
         align-items: center;}	
 
     .content h1 {
-        font-size: 44px;
-        width: 500px;
+        font-size: 46px;
+        width: 585px;
     }
     .card h1{font-size: 18px;}
     .left-footer-side p{width: auto;margin: 15px 0;}
-    .Newsletter-section{width: 100%;}
+    .Newsletter-section{width: 100%; flex-direction: row;}
     .reviews-curd,.resualts-curds .curd{width: 60%;margin: 10px 0; text-align: center;}
     .container-cruds .curd{width: 362px; margin: 10px 0;}
     .top-phone-hero,.top-phone-hero img{
@@ -817,7 +962,15 @@ footer{    background-color: var(--bg);}
     
     .m1{width: 365px;}
     .top-phone-hero{display: contents;}
+
+    body.dark .nav-ph{
+        background-color: rgb(57 57 57 / 75%);
+    }
+    .inside-tags{width: auto;}
+    .tags-section{flex-direction: column;}
 }
 
 .hide{display: none;}
-#m2 img{width: 320px;}
+#m2 .m1{width: 360px;}
+
+
