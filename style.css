@@ -881,7 +881,6 @@ footer{    background-color: var(--bg);}
 
 
 
-
 @media (max-width: 768px) {
     .top-footer{align-items: center;}
     body{width: stretch;}
@@ -932,7 +931,7 @@ footer{    background-color: var(--bg);}
     .middle-btms{font-size:35px;}
 
     .bottom-btms span button {font-size: 33px;}
-    .nav-ph {top:-175px;left:-380px;}
+    .nav-ph {top: -220px;left: -410px;}
     .insturctors-cruds {
         grid-template-columns: repeat(1, 1fr);
         padding: 50px;
@@ -968,6 +967,16 @@ footer{    background-color: var(--bg);}
     }
     .inside-tags{width: auto;}
     .tags-section{flex-direction: column;}
+    .nav-ph {
+        top: -210px;
+        left: -482px;
+    }
+}
+@media (max-width: 375px) {
+    .nav-ph {
+        top: -235px;
+        left: -433px;
+    }
 }
 
 .hide{display: none;}
