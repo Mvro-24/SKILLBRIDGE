@@ -843,7 +843,6 @@ footer{    background-color: var(--bg);}
     max-width: 420px;
     padding: 30px 20px;
   }
-  #m2 .m1{width: 300px;}
   section{width: fit-content;}
   .insturctors-cruds {
         grid-template-columns: repeat(3, 1fr);
@@ -974,12 +973,10 @@ footer{    background-color: var(--bg);}
 }
 @media (max-width: 375px) {
     .nav-ph {
-        top: -235px;
-        left: -433px;
-    }
+        top: -310px;
+        left: -422px;}
 }
 
 .hide{display: none;}
-#m2 .m1{width: 360px;}
-
+#m2 .m1{width: 320px;}
 

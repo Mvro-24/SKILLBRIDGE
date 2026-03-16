@@ -16,9 +16,9 @@ btn3.onclick = function(){
     document.body.classList.toggle("dark")
 
     if (document.body.classList.contains("dark")){
-        btn.innerHTML=' <i class="fa-regular fa-sun"></i>'}
+        btn3.innerHTML=' <i class="fa-regular fa-sun"></i>'}
 
-    else(btn.innerHTML ='<i class="fa-solid fa-moon"></i>')
+    else(btn3.innerHTML ='<i class="fa-solid fa-moon"></i>')
 }
 
 
