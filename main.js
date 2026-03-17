@@ -68,3 +68,12 @@ scrol.onclick = function(){
         behavior:"smooth"
     })
 }
+
+
+let load = document.getElementById('loadin')
+
+
+
+setTimeout(function(){
+        load.classList.add('hide')
+},3100)
