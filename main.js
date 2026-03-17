@@ -51,3 +51,20 @@ close.onclick=function(){
     nav_com.classList.remove('hide')
     
 }
+
+let scrol = document.getElementById("scr-btn")
+
+
+window.onscroll = function(){
+    if(scrollY >= 761.7777709960938){scrol.style.opacity=1;scrol.style.display="block"}
+    else{scrol.style.opacity=0;scrol.style.display = 'none'}
+}
+
+
+scrol.onclick = function(){
+    scroll({
+        top : 0,
+        left : 0,
+        behavior:"smooth"
+    })
+}

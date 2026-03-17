@@ -554,7 +554,7 @@ section{
     font-weight: bolder;
     font-size: 15px;
 }
-
+#m2 .m1{width: 320px;}
 .alert-sec{
     position: absolute;
     display: flex;
@@ -897,9 +897,7 @@ footer{    background-color: var(--bg);}
         justify-content: center;
         flex-direction: column;
     }
-    .insturctors-cruds{width:60%}
-
-    .rightside {display:inline}
+    .rightside {display:flex}
 
     form {
         background: var(--surface);
@@ -933,7 +931,7 @@ footer{    background-color: var(--bg);}
     .nav-ph {top: -220px;left: -410px;}
     .insturctors-cruds {
         grid-template-columns: repeat(1, 1fr);
-        padding: 50px;
+        width: auto;
     }
 
     .head-of-tracks{
@@ -948,6 +946,7 @@ footer{    background-color: var(--bg);}
     .left-footer-side p{width: auto;margin: 15px 0;}
     .Newsletter-section{width: 100%; flex-direction: row;}
     .reviews-curd,.resualts-curds .curd{width: 60%;margin: 10px 0; text-align: center;}
+    .reviews-curd{text-align: left;}
     .container-cruds .curd{width: 362px; margin: 10px 0;}
     .top-phone-hero,.top-phone-hero img{
         display:block;
@@ -967,9 +966,21 @@ footer{    background-color: var(--bg);}
     .inside-tags{width: auto;}
     .tags-section{flex-direction: column;}
     .nav-ph {
-        top: -210px;
-        left: -482px;
+        top: -215px;
+        left: -450px;}
+    .curd{margin: -90px;}
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
+    .content p{width: 60%;}
+    .card p{width: 100%;}
+    #m2 .m1 {width: 362px;}
+    .reviews-section{margin-top: 150px;}
+
 }
 @media (max-width: 375px) {
     .nav-ph {
@@ -978,5 +989,26 @@ footer{    background-color: var(--bg);}
 }
 
 .hide{display: none;}
-#m2 .m1{width: 320px;}
 
+
+#scr-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--primary);
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    right: 40px;
+    bottom: 40px;
+    display: none;
+}
+#scr-btn i{position: absolute;top: 15px; right: 15px;}
+
+#scr-btn:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: var(--transition);
+}
